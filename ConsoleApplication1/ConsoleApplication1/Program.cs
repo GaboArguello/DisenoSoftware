@@ -12,7 +12,12 @@ namespace ConsoleApplication1
         {
             Console.WriteLine("Hello World");
             Console.WriteLine("Hello Gabriel");
-            Console.ReadKey();//
+            
+
+
+            Fibonacci Result = new Fibonacci();
+            Console.WriteLine(Result.Calcular(8));
+            Console.ReadKey();
 
 
         }
