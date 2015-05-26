@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,51 @@ namespace ConsoleApplication1
             }
 
             return 0;
+        }
+
+
+
+
+        public void fiboArrayList(ArrayList myList)
+        {
+
+            ArrayList ListNew = new ArrayList();
+            List<int> Lista = new List<int>();
+
+
+
+                foreach (int item in myList)
+                {
+                    Lista.Add(Calcular(item));
+                    ListNew.Add(Calcular(item));
+                }
+
+
+                PrintArray(ListNew);
+                PrintList(Lista);
+        }
+
+
+        private void PrintArray(IEnumerable MyArray)
+        {
+
+            Console.WriteLine("ArrayList:");
+
+            foreach (Object obj in MyArray)
+                Console.Write("   {0}", obj);
+            Console.WriteLine();
+
+        }
+
+        private void PrintList(IList myList)
+        {
+
+            Console.WriteLine("Lista:");
+
+            foreach (Object obj in myList)
+                Console.Write("   {0}", obj);
+            Console.WriteLine();
+
         }
 
 
