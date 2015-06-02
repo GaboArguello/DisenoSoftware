@@ -13,10 +13,10 @@ namespace ConsoleApplication1
         {
             //Console.WriteLine("Hello World");
             //Console.WriteLine("Hello Gabriel");
-            
 
 
-            Fibonacci Result = new Fibonacci();
+
+           
 
            /*Console.WriteLine(Result.Calcular(1));
            Console.WriteLine(Result.Calcular(2));
@@ -28,8 +28,11 @@ namespace ConsoleApplication1
            Console.WriteLine(Result.Calcular(8));
            Console.ReadKey();*/
 
+            Fibonacci MiFibo = new Fibonacci();
 
-            Console.WriteLine();
+            
+
+           /* Console.WriteLine();
 
             ArrayList MiArray = new ArrayList();
             MiArray.Add(4);
@@ -39,11 +42,23 @@ namespace ConsoleApplication1
             MiArray.Add(11);
             MiArray.Add(25);
 
-            Result.fiboArrayList(MiArray);
+           MiFibo.fiboArrayList(MiArray);
             Console.ReadKey();
+            */
 
-            
 
+            BaseDatos.Numeros num = new BaseDatos.Numeros();
+
+            num.Agregar(1);
+            num.Agregar(999);
+            num.Agregar(57);
+
+
+            int cantidad = num.Cantidad();
+
+            Console.WriteLine("Cantidad = {0}", cantidad);
+
+            Console.ReadLine();
         }
     }
 }

@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{6B58C833-DC32-4BA8-B424-C85BD8A8B5E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSem1", "ConsoleApplication1\ConsoleSem1.csproj", "{6B58C833-DC32-4BA8-B424-C85BD8A8B5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculoSs", "CalculoSs\CalculoSs.csproj", "{02E527E5-C579-4E2E-A091-F76004BD97EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatos", "BaseDatos\BaseDatos.csproj", "{10C17483-57C3-447C-9B49-134E7BD98F15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6B58C833-DC32-4BA8-B424-C85BD8A8B5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B58C833-DC32-4BA8-B424-C85BD8A8B5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B58C833-DC32-4BA8-B424-C85BD8A8B5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E527E5-C579-4E2E-A091-F76004BD97EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E527E5-C579-4E2E-A091-F76004BD97EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E527E5-C579-4E2E-A091-F76004BD97EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E527E5-C579-4E2E-A091-F76004BD97EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C17483-57C3-447C-9B49-134E7BD98F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C17483-57C3-447C-9B49-134E7BD98F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C17483-57C3-447C-9B49-134E7BD98F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C17483-57C3-447C-9B49-134E7BD98F15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
