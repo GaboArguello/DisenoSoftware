@@ -56,7 +56,11 @@ namespace ConsoleApplication1
 
             int cantidad = num.Cantidad();
 
-            Console.WriteLine("Cantidad = {0}", cantidad);
+            //Console.WriteLine("Cantidad = {0}", cantidad);
+
+            CalculoSs.Exeption MaxFibo = new CalculoSs.Exeption();
+
+            MaxFibo.NumMaxFibonacci();
 
             Console.ReadLine();
         }
