@@ -8,14 +8,41 @@ namespace Logica.Dividir
 {
     public class CalculadoraController
     {
-        public string CoordineLaDivision(double dividendo, double divisor)
+        public void CoordineLaDivision()
         {
-            CalculadoraEntity laCalculadora = new CalculadoraEntity();
+            CalculadoraBoundary elLimite = new CalculadoraBoundary();
+            string resultadoString;
+            try
+            {
 
-            double resultado = laCalculadora.Dividir(dividendo,divisor);
-            string resultadoString = resultado.ToString();
+                string dividendo = elLimite.OptenerDividendo();
 
-            return resultadoString;
+                if (dividendo.Contains("."))
+                {
+                    
+                }
+                else
+                {
+                    double respuesta = double.
+                }
+
+                string divisor = elLimite.ObtenerDivisor();
+
+                CalculadoraEntity laCalculadora = new CalculadoraEntity();
+                double resultado = laCalculadora.Dividir(dividendo, divisor);
+                resultadoString = resultado.ToString();
+            
+            
+            }
+            catch (Exception)
+            {
+                
+                resultadoString = "Error";
+            }
+
+            elLimite.MostraResultado(resultadoString);
+
+            
         }
 
 

@@ -10,21 +10,27 @@ namespace Logica.Dividir
     public class CalculadoraBoundary
     {
 
-        public double ObtenerDivisor()
+        public string ObtenerDivisor()
         {
             Console.WriteLine("Deme el Divisor");
             string divisor = Console.ReadLine();
+
+            if (divisor.Contains("."))
+            {
+                
+            }
+
             double respuesta = double.Parse(divisor);
-            return respuesta;
+           
             
         }
 
-        public double OptenerDividendo()
+        public string OptenerDividendo()
         {
             Console.WriteLine("Deme el Dividendo");
             string dividendo = Console.ReadLine();
             double respuesta = double.Parse(dividendo);
-            return respuesta;
+            
         }
 
 
@@ -32,6 +38,7 @@ namespace Logica.Dividir
 
         public void MostraResultado(string resultado)
         {
+            Console.WriteLine("El resultado es: ");
             Console.WriteLine(resultado);
             Console.ReadLine();
         }

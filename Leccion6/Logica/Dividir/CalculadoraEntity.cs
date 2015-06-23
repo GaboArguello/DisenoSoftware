@@ -21,24 +21,13 @@ namespace Logica.Dividir
 
         public double Dividir(double n, double m)
         {
-            try
-            {
+            
                 if (m == 0)
                 {
                     throw new Exception("Error, el divisor no debe ser cero");
 
                 }
-                if (n == 0)
-                {
-                    return 0;
-                }
 
-                
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
             return n / m;
         }
 
