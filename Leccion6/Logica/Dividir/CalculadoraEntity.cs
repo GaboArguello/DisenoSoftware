@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Logica.Factorial
+namespace Logica.Dividir
 {
-   public class CalculadoraNormal
+   public class CalculadoraEntity
     {
 
         /*Ejemplos
@@ -25,7 +25,7 @@ namespace Logica.Factorial
             {
                 if (m == 0)
                 {
-                    throw new Exception("Error");
+                    throw new Exception("Error, el divisor no debe ser cero");
 
                 }
                 if (n == 0)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Logica.Factorial;
+using Logica.Dividir;
 using Aplicacion.Factorial;
 
 namespace InterfazDeUsuario
@@ -12,18 +12,29 @@ namespace InterfazDeUsuario
     {
         static void Main(string[] args)
         {
+            /*
+                        CalculadoraDeFactorial miCalculadora = new CalculadoraDeFactorial();
+                        CalculadoraEntity miCalculadoraNormal = new CalculadoraEntity();
+                        CoordinadoraDeFactorial miCoordinadora = new CoordinadoraDeFactorial();
 
-            CalculadoraDeFactorial miCalculadora = new CalculadoraDeFactorial();
-            CalculadoraNormal miCalculadoraNormal = new CalculadoraNormal();
-            CoordinadoraDeFactorial miCoordinadora = new CoordinadoraDeFactorial();
 
 
+                        Console.WriteLine(miCalculadora.Factorial(-2));
+                        Console.WriteLine(miCalculadoraNormal.Dividir(1,0));
+            
+                        */
 
-            Console.WriteLine(miCalculadora.Factorial(-2));
-            Console.WriteLine(miCalculadoraNormal.Dividir(1,0));
+            CalculadoraBoundary elLimite = new CalculadoraBoundary();
+            double dividendo = elLimite.OptenerDividendo();
+            double divisor = elLimite.ObtenerDivisor();
             
 
-            Console.ReadKey();
+
+            CalculadoraController laControladora = new CalculadoraController();
+            string resultado = laControladora.CoordineLaDivision(dividendo, divisor);
+
+            elLimite.MostraResultado(resultado);
+
 
         }
     }

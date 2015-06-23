@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factorial\CalculadoraNormal.cs" />
+    <Compile Include="Dividir\CalculadoraBoundary.cs" />
+    <Compile Include="Dividir\CalculadoraController.cs" />
+    <Compile Include="Dividir\CalculadoraEntity.cs" />
     <Compile Include="Factorial\CalculadoraDeFactorial.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
